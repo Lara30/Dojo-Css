@@ -13,12 +13,33 @@
 		<header>
 			<h1><span class="grey">Company</span><span class="blue">NAME</span></h1>
 			<nav>
-				<ul>
-					<li>What</li>
-					<li>Companies</li>
-					<li>Meet</li>
-					<li>Testimonials</li>
-					<li>Why</li>
+				<ul id="essai">
+					<!--avec le ul on a une liste ordonnée simple
+				sans le ul avec le <ol> on a une liste non ordonnée-->
+
+					<li><a href="#">What</a></li>
+					<li><a href="#">Companies</a>
+						<ul id="sousmenu">
+							<li><a href="#">Company1</a></li>
+							<li><a href="#">Company2</a></li>
+							<li><a href="#">Company3</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Meet</a>
+					</li>
+					<li><a href="#">Testimonials</a>
+						<ul id="sousmenu">
+							<li><a href="#">Clients</a></li>
+							<li><a href="#">Partners</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Why</a>
+						<ul id="sousmenu">
+							<li><a href="#">Because</a></li>
+							<li><a href="#">Why not</a></li>
+						</ul>
+					</li>
+
 				</ul>
 			</nav>
 		</header>
