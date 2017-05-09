@@ -1,27 +1,40 @@
 /***************************
         Dojo Css
 ***************************/
-
 main{
     font-family: sans-serif;
-    display: flex;
     flex-direction: column;
-
 }
 
 header{
-    flex: 1;
-    display: flex;
+    /*display: inline-block;*/
     justify-content: space-between;
 }
-ul {
-    display: flex;
+nav{
+  float: right;
+  /*afin de mettre la nav à droite*/
+}
+nav ul li{
+  display: block;
+  margin:0 10px;
 }
 
-li {
-    list-style: none;
-    margin-right: 5px;
+ul{
+  display: inline-flex;
 }
+
+ul li{
+  /*display: inline-block;*/
+}
+
+#sousmenu{
+    display: none;
+}
+
+#essai li:hover #sousmenu{
+    display:block;
+}
+
 li:first-child {
     color: #486c8c;
 }
@@ -30,7 +43,6 @@ li:first-child {
     background-image: url("./img/bg.jpg");
     height : 400px;
     background-position: center center;
-
 }
 
 .second_text{
@@ -39,9 +51,6 @@ li:first-child {
 }
 .last_section {
     display: flex;
-
-
-
 }
 
 .blue {
@@ -61,16 +70,13 @@ button {
     padding: 1%;
 }
 
-
 .ok{
     margin-top: 150px;
-color: white;
-
+    color: white;
 }
 
 .logo {
     margin:auto;
-
 }
 
 .last_section article{
